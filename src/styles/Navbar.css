@@ -3,7 +3,7 @@
 }
 
 nav {
-    position: absolute;
+    position: relative;
     width: 100vw;
     height: var(--nav-height);
     display: flex;
@@ -11,8 +11,6 @@ nav {
     background: #fff;
     z-index: 2;
     margin-top: 0;
-    top: 0;
-    left: 0;
 }
 
 nav a,

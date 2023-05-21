@@ -3,6 +3,8 @@ import Navbar from '../components/Navbar';
 
 import type { LinkData } from '../components/Navbar';
 
+import '../styles/index.css';
+
 import logo from '/logo.png';
 
 export interface Props {
@@ -15,12 +17,12 @@ const navLinks: LinkData[] = [
 		url : './about'
 	},
 	{
-		title: "Contact",
-		url: './contact'
-	},
-	{
 		title: "Articles",
 		url: './articles'
+	},
+	{
+		title: "FAQ",
+		url: './faq'
 	},
 	{
 		title: "Join The Crew!",

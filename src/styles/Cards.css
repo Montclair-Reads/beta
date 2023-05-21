@@ -3,5 +3,7 @@
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 6px;
     margin-left: 6px;
-    margin-top: calc(65px + 6px); /* Nav Height + Real Margin */
+    margin-top: 6px;
+    position: relative; /* Hack To Fix Navbar CSS Bug */
+    top: 65px; /* Hack To Fix Navbar CSS Bug */
 }
