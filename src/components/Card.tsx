@@ -12,7 +12,7 @@ export type ArticleCardData = {
 
 export const IssueCard = (props: IssueCardData) => {
     const imgURL = `https://assets.api.bookcreator.com/${props.id.replace('/', '/books/')}/cover/`;
-    const linkURL = `/beta/issue?id=${props.id}`;
+    const linkURL = `/beta/issue/#${props.id}`;
 
     return (
         <a href={linkURL} class="Card">
