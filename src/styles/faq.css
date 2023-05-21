@@ -15,14 +15,3 @@ h1, p {
 p {
     font-size: 115%;
 }
-
-a.faq-link {
-    font-weight: bold;
-    font-style: italic;
-    text-decoration: none;
-    color: #00e;
-}
-
-a.faq-link:hover {
-    text-decoration: underline;
-}
