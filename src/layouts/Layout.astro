@@ -1,0 +1,56 @@
+---
+import Navbar from '../components/Navbar';
+
+import type { LinkData } from '../components/Navbar';
+
+import logo from '/logo.png';
+
+export interface Props {
+	title: string;
+}
+
+const navLinks: LinkData[] = [
+	{
+		title: "About",
+		url : './about'
+	},
+	{
+		title: "Contact",
+		url: './contact'
+	},
+	{
+		title: "Articles",
+		url: './articles'
+	},
+	{
+		title: "Join The Crew!",
+		url: './join'
+	},
+	{
+		title: "Legacy Site",
+		url: './legacy'
+	}
+]
+
+const { title } = Astro.props;
+---
+
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="description" content="Astro description">
+		<meta name="viewport" content="width=device-width" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="generator" content={Astro.generator} />
+		<title>{title}</title>
+		<link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png">
+		<link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png">
+		<link rel="manifest" href="/favicon/site.webmanifest">
+	</head>
+	<body>
+		<Navbar title="The Red-Tailed Read" links={navLinks} logo={logo} />
+		<slot />
+	</body>
+</html>
