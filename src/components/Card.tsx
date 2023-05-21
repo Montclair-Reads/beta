@@ -24,7 +24,7 @@ export const IssueCard = (props: IssueCardData) => {
 
 export const ArticleCard = (props: ArticleCardData) => (
     <a href={`./articles?a=${props.slug}`} class="Card">
-        <img src={`/articles/thumbnails/${props.slug}.png`} alt="Cover Image" />
+        <img src={`../articles/thumbnails/${props.slug}.png`} alt="Cover Image" />
         <span>{props.name}</span>
     </a>
 );
