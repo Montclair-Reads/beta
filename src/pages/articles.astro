@@ -24,13 +24,24 @@ export const articles: ArticleCardData[] = [
 </Layout>
 
 <script>
-    if (window.location.hash != '') {
-        const cards = document.querySelector('.Cards') as HTMLDivElement;
-        cards.remove();
-
+    const addIframe = () => {
         const main = document.querySelector('main') as HTMLElement;
         const iframe = document.createElement('iframe');
         iframe.src = `/beta/articles/${window.location.hash.replace('#', '')}/index.html`;
         main.appendChild(iframe);
+    }
+
+    const removeCards = () => {
+        const cards = document.querySelector('.Cards');
+        if (cards == null) {
+            setTimeout(removeCards, 50);
+            return;
+        }
+        cards.remove();
+        addIframe();
+    }
+
+    if (window.location.hash != '') {
+        removeCards();
     }
 </script>
