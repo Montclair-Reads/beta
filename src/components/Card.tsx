@@ -1,11 +1,11 @@
 import '../styles/Card.css';
 
-export type CardData = {
+export type IssueCardData = {
     id: string,
     datePublished: string
 }
 
-export default (props: CardData) => {
+export const IssueCard = (props: IssueCardData) => {
     const imgURL = `https://assets.api.bookcreator.com/${props.id.replace('/', '/books/')}/cover/`;
     const linkURL = `./issue?id=${props.id}`;
 
