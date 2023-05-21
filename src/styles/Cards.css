@@ -5,5 +5,4 @@
     margin-left: 6px;
     margin-top: 6px;
     position: relative; /* Hack To Fix Navbar CSS Bug */
-    top: 65px; /* Hack To Fix Navbar CSS Bug */
 }
