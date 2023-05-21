@@ -3,13 +3,16 @@
 }
 
 nav {
-    position: relative;
+    position: absolute;
     width: 100vw;
     height: var(--nav-height);
     display: flex;
     flex-direction: row;
     background: #fff;
     z-index: 2;
+    margin-top: 0;
+    top: 0;
+    left: 0;
 }
 
 nav a,
