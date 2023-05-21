@@ -15,7 +15,7 @@ type NavbarProps = {
 
 export default (props: NavbarProps) => (
     <nav>
-        <a href="./" class="home">
+        <a href="/beta/" class="home">
             <Show when={props.logo != null}>
                 <img src={props.logo} alt="Logo" />
             </Show>
