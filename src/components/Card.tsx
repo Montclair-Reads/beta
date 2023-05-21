@@ -28,7 +28,7 @@ const ArticleClick = (slug: string) => {
 
     const main = document.querySelector('main') as HTMLElement;
     const iframe = document.createElement('iframe');
-    iframe.src = `../articles/${slug}/index.html`;
+    iframe.src = `/beta/articles/${slug}/index.html`;
     main.appendChild(iframe);
 }
 

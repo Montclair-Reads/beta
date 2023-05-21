@@ -30,7 +30,7 @@ export const articles: ArticleCardData[] = [
 
         const main = document.querySelector('main') as HTMLElement;
         const iframe = document.createElement('iframe');
-        iframe.src = `../articles/${window.location.hash.replace('#', '')}/index.html`;
+        iframe.src = `/beta/articles/${window.location.hash.replace('#', '')}/index.html`;
         main.appendChild(iframe);
     }
 </script>
